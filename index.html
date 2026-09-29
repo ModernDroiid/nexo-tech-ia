@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="es" class="no-js" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nexo Tech IA | Seguridad Electrónica y Desarrollo Web</title>
+  <meta name="description" content="Nexo Tech IA: instalación de CCTV, alarmas, control de acceso y desarrollo web. Protegemos tu hogar y tu empresa con tecnología inteligente." />
+  <meta name="theme-color" content="#070b14" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Nexo Tech IA | Seguridad Electrónica y Desarrollo Web" />
+  <meta property="og:description" content="CCTV, alarmas, control de acceso y desarrollo web para hogares y empresas." />
+  <meta property="og:type" content="website" />
+
+  <link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg" />
+
+  <!-- Fuentes -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet" />
+
+  <!-- Estilos -->
+  <link rel="stylesheet" href="css/base.css" />
+  <link rel="stylesheet" href="css/components.css" />
+  <link rel="stylesheet" href="css/sections.css" />
+  <link rel="stylesheet" href="css/theme-light.css" />
+
+  <!-- Aplica el tema guardado antes de pintar la página (evita parpadeo) -->
+  <script>
+    try { var t = localStorage.getItem("theme"); if (t) document.documentElement.dataset.theme = t; } catch (e) {}
+  </script>
+</head>
+<body>
+
+  <!-- ============ HEADER ============ -->
+  <header class="header" id="header">
+    <div class="container header__inner">
+      <a href="#inicio" class="logo" aria-label="Nexo Tech IA - Inicio">
+        <img src="assets/img/logo.svg" alt="" width="36" height="36" />
+        <span class="logo__text">Nexo Tech <strong>IA</strong></span>
+      </a>
+
+      <nav class="nav" id="nav" aria-label="Navegación principal">
+        <ul class="nav__list">
+          <li><a href="#servicios" class="nav__link">Servicios</a></li>
+          <li><a href="#nosotros" class="nav__link">Nosotros</a></li>
+          <li><a href="#proceso" class="nav__link">Proceso</a></li>
+          <li><a href="#contacto" class="nav__link">Contacto</a></li>
+        </ul>
+        <a href="#contacto" class="btn btn--primary nav__cta">Cotizar ahora</a>
+      </nav>
+
+      <button class="theme-toggle" id="themeToggle" aria-label="Cambiar a tema oscuro">
+        <svg class="theme-toggle__moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 14.5A8 8 0 0 1 9.5 4a8 8 0 1 0 10.5 10.5Z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg>
+        <svg class="theme-toggle__sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+      </button>
+
+      <button class="nav__toggle" id="navToggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="nav">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ============ HERO ============ -->
+    <section class="hero" id="inicio">
+      <div class="hero__grid" aria-hidden="true"></div>
+      <div class="hero__glow" aria-hidden="true"></div>
+
+      <div class="container hero__inner">
+        <div class="hero__content">
+          <p class="eyebrow"><span class="dot dot--live"></span> Monitoreo y protección 24/7</p>
+          <h1 class="hero__title">
+            Seguridad inteligente para lo que <span class="text-gradient">más te importa</span>
+          </h1>
+          <p class="hero__text">
+            Instalamos sistemas de CCTV, alarmas y control de acceso con tecnología de última generación,
+            y desarrollamos la presencia web que tu negocio necesita. Todo en un solo lugar.
+          </p>
+          <div class="hero__actions">
+            <a href="#contacto" class="btn btn--primary btn--lg">
+              Solicitar cotización
+              <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </a>
+            <a href="#servicios" class="btn btn--ghost btn--lg">Ver servicios</a>
+          </div>
+
+          <ul class="hero__badges">
+            <li>
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 6 9 17l-5-5" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              Visita técnica sin costo
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 6 9 17l-5-5" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              Garantía en instalación
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 6 9 17l-5-5" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              Soporte técnico
+            </li>
+          </ul>
+        </div>
+
+        <!-- Visual: monitor de cámaras -->
+        <div class="hero__visual" aria-hidden="true">
+          <div class="monitor">
+            <div class="monitor__bar">
+              <span class="monitor__rec"><span class="dot dot--rec"></span> REC</span>
+              <span class="monitor__label">NEXO · VMS</span>
+              <span class="monitor__clock" id="monitorClock">00:00:00</span>
+            </div>
+            <div class="monitor__feeds">
+              <div class="feed feed--main">
+                <img src="assets/img/cams/cam-01.svg" alt="" />
+                <span class="feed__tag">CAM 01 · Entrada principal</span>
+                <span class="feed__meta">1080p · 25 fps</span>
+              </div>
+              <div class="feed">
+                <img src="assets/img/cams/cam-02.svg" alt="" />
+                <span class="feed__tag">CAM 02</span>
+              </div>
+              <div class="feed">
+                <img src="assets/img/cams/cam-03.svg" alt="" />
+                <span class="feed__tag">CAM 03</span>
+              </div>
+              <div class="feed">
+                <img src="assets/img/cams/cam-04.svg" alt="" />
+                <span class="feed__tag">CAM 04</span>
+              </div>
+            </div>
+            <div class="monitor__status">
+              <span><span class="dot dot--ok"></span> Alarma armada</span>
+              <span><span class="dot dot--ok"></span> 4/4 en línea</span>
+              <span class="monitor__ai">IA: detección activa</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ SERVICIOS ============ -->
+    <section class="section" id="servicios">
+      <div class="container">
+        <header class="section__header reveal">
+          <p class="eyebrow">Servicios</p>
+          <h2 class="section__title">Soluciones completas de seguridad y tecnología</h2>
+          <p class="section__text">Diseñamos, instalamos y damos soporte a cada sistema, adaptado a tu espacio y presupuesto.</p>
+        </header>
+
+        <div class="services">
+          <article class="card service reveal">
+            <div class="service__icon">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 7h13l4 3-4 3H3z M6 13v4 M3 17h6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/><circle cx="12" cy="10" r="1.3" fill="currentColor"/></svg>
+            </div>
+            <h3 class="service__title">Cámaras CCTV</h3>
+            <p class="service__text">Videovigilancia HD y 4K con visión nocturna, grabación continua y acceso remoto desde tu celular.</p>
+            <ul class="service__list">
+              <li>Cámaras IP y analógicas</li>
+              <li>Monitoreo desde la app</li>
+              <li>Detección inteligente con IA</li>
+            </ul>
+          </article>
+
+          <article class="card service reveal">
+            <div class="service__icon">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 17V11a6 6 0 0 1 12 0v6 M4 17h16 M10 20h4 M12 2v1.5 M4.2 5.2l1 1 M19.8 5.2l-1 1" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </div>
+            <h3 class="service__title">Sistemas de alarma</h3>
+            <p class="service__text">Alarmas contra intrusión con sensores de movimiento, apertura y notificaciones en tiempo real.</p>
+            <ul class="service__list">
+              <li>Sensores inalámbricos</li>
+              <li>Alertas push y SMS</li>
+              <li>Control desde el celular</li>
+            </ul>
+          </article>
+
+          <article class="card service reveal">
+            <div class="service__icon">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="11" width="14" height="10" rx="2" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M8 11V7a4 4 0 0 1 8 0v4 M12 15v2" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+            </div>
+            <h3 class="service__title">Control de acceso</h3>
+            <p class="service__text">Gestiona quién entra y cuándo con biometría, tarjetas de proximidad y cerraduras inteligentes.</p>
+            <ul class="service__list">
+              <li>Huella y reconocimiento facial</li>
+              <li>Tarjetas y llaveros RFID</li>
+              <li>Registro de asistencia</li>
+            </ul>
+          </article>
+
+          <article class="card service reveal">
+            <div class="service__icon">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="4" width="18" height="14" rx="2" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M9 21h6 M10 9l-2 2 2 2 M14 9l2 2-2 2" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </div>
+            <h3 class="service__title">Desarrollo web</h3>
+            <p class="service__text">Sitios web y landing pages rápidas, modernas y optimizadas para celular que convierten visitas en clientes.</p>
+            <ul class="service__list">
+              <li>Diseño a la medida</li>
+              <li>Optimización SEO</li>
+              <li>Hosting y mantenimiento</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ NOSOTROS / CIFRAS ============ -->
+    <section class="section section--alt" id="nosotros">
+      <div class="container about">
+        <div class="about__content reveal">
+          <p class="eyebrow">Por qué elegirnos</p>
+          <h2 class="section__title">Tecnología confiable, instalada por expertos</h2>
+          <p class="section__text">
+            En Nexo Tech IA combinamos experiencia técnica en seguridad electrónica con soluciones
+            digitales. No solo instalamos equipos: diseñamos un sistema que funciona para ti y te
+            acompañamos después de la instalación.
+          </p>
+
+          <ul class="features">
+            <li class="feature">
+              <span class="feature__icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3 4 6v6c0 5 3.5 8 8 9 4.5-1 8-4 8-9V6z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg></span>
+              <div>
+                <h3>Equipos de marcas reconocidas</h3>
+                <p>Trabajamos con fabricantes líderes para garantizar durabilidad y calidad de imagen.</p>
+              </div>
+            </li>
+            <li class="feature">
+              <span class="feature__icon"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M12 7v5l3 2" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></span>
+              <div>
+                <h3>Respuesta rápida</h3>
+                <p>Atención ágil para cotizaciones, instalaciones y soporte técnico.</p>
+              </div>
+            </li>
+            <li class="feature">
+              <span class="feature__icon"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="7" y="2" width="10" height="20" rx="2" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M11 18h2" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></span>
+              <div>
+                <h3>Todo desde tu celular</h3>
+                <p>Configuramos cada sistema para que lo veas y controles desde cualquier lugar.</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <div class="stats reveal">
+          <div class="stat">
+            <span class="stat__num" data-count="150" data-suffix="+">0</span>
+            <span class="stat__label">Proyectos instalados</span>
+          </div>
+          <div class="stat">
+            <span class="stat__num" data-count="98" data-suffix="%">0</span>
+            <span class="stat__label">Clientes satisfechos</span>
+          </div>
+          <div class="stat">
+            <span class="stat__num" data-count="24" data-suffix="/7">0</span>
+            <span class="stat__label">Acceso remoto</span>
+          </div>
+          <div class="stat">
+            <span class="stat__num" data-count="1" data-suffix=" año">0</span>
+            <span class="stat__label">Garantía mínima</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ PROCESO ============ -->
+    <section class="section" id="proceso">
+      <div class="container">
+        <header class="section__header reveal">
+          <p class="eyebrow">Cómo trabajamos</p>
+          <h2 class="section__title">De la visita a la protección en 4 pasos</h2>
+        </header>
+
+        <ol class="steps">
+          <li class="step reveal">
+            <span class="step__num">01</span>
+            <h3 class="step__title">Diagnóstico</h3>
+            <p class="step__text">Visitamos tu espacio y evaluamos los puntos críticos de seguridad.</p>
+          </li>
+          <li class="step reveal">
+            <span class="step__num">02</span>
+            <h3 class="step__title">Propuesta</h3>
+            <p class="step__text">Te presentamos una cotización clara, con equipos y tiempos definidos.</p>
+          </li>
+          <li class="step reveal">
+            <span class="step__num">03</span>
+            <h3 class="step__title">Instalación</h3>
+            <p class="step__text">Instalamos y configuramos todo con cableado limpio y ordenado.</p>
+          </li>
+          <li class="step reveal">
+            <span class="step__num">04</span>
+            <h3 class="step__title">Soporte</h3>
+            <p class="step__text">Te capacitamos en el uso del sistema y seguimos disponibles para ti.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ============ CTA ============ -->
+    <section class="cta">
+      <div class="container">
+        <div class="cta__box reveal">
+          <div>
+            <h2 class="cta__title">¿Listo para proteger tu hogar o negocio?</h2>
+            <p class="cta__text">Agenda una visita técnica sin costo y recibe tu cotización personalizada.</p>
+          </div>
+          <a href="#contacto" class="btn btn--primary btn--lg">Agendar visita</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CONTACTO ============ -->
+    <section class="section" id="contacto">
+      <div class="container contact">
+        <div class="contact__info reveal">
+          <p class="eyebrow">Contacto</p>
+          <h2 class="section__title">Hablemos de tu proyecto</h2>
+          <p class="section__text">Cuéntanos qué necesitas y te respondemos lo antes posible.</p>
+
+          <!-- TODO: reemplazar con los datos reales de la empresa -->
+          <ul class="contact__list">
+            <li>
+              <span class="contact__icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg></span>
+              <div><small>Teléfono / WhatsApp</small><a href="tel:+573125579526">+57 312 557 9526</a></div>
+            </li>
+            <li>
+              <span class="contact__icon"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="m3 7 9 6 9-6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg></span>
+              <div><small>Correo</small><a href="mailto:contacto@nexotechia.com">contacto@nexotechia.com</a></div>
+            </li>
+            <li>
+              <span class="contact__icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21Z" fill="none" stroke="currentColor" stroke-width="1.8"/><circle cx="12" cy="9.5" r="2.5" fill="none" stroke="currentColor" stroke-width="1.8"/></svg></span>
+              <div><small>Cobertura</small><span>Bogotá, Cundinamarca</span></div>
+            </li>
+          </ul>
+        </div>
+
+        <form class="card form reveal" id="contactForm" novalidate>
+          <div class="form__row">
+            <div class="form__group">
+              <label for="nombre">Nombre</label>
+              <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" autocomplete="name" required />
+            </div>
+            <div class="form__group">
+              <label for="telefono">Teléfono</label>
+              <input type="tel" id="telefono" name="telefono" placeholder="300 000 0000" autocomplete="tel" inputmode="tel" required />
+            </div>
+          </div>
+
+          <div class="form__group">
+            <label for="servicio">Servicio de interés</label>
+            <select id="servicio" name="servicio" required>
+              <option value="" disabled selected>Selecciona un servicio</option>
+              <option>Cámaras CCTV</option>
+              <option>Sistemas de alarma</option>
+              <option>Control de acceso</option>
+              <option>Desarrollo web</option>
+              <option>Varios servicios</option>
+            </select>
+          </div>
+
+          <div class="form__group">
+            <label for="mensaje">Mensaje</label>
+            <textarea id="mensaje" name="mensaje" rows="4" placeholder="Cuéntanos sobre tu proyecto: tipo de lugar, cantidad de cámaras, etc."></textarea>
+          </div>
+
+          <button type="submit" class="btn btn--primary btn--lg btn--block">
+            Enviar por WhatsApp
+            <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </button>
+          <p class="form__status" id="formStatus" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <a href="#inicio" class="logo">
+        <img src="assets/img/logo.svg" alt="" width="30" height="30" />
+        <span class="logo__text">Nexo Tech <strong>IA</strong></span>
+      </a>
+      <nav class="footer__nav" aria-label="Enlaces del pie de página">
+        <a href="#servicios">Servicios</a>
+        <a href="#nosotros">Nosotros</a>
+        <a href="#proceso">Proceso</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+      <p class="footer__copy">© <span id="year"></span> Nexo Tech IA. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <!-- Botón flotante de WhatsApp -->
+  <a href="#" class="whatsapp" id="whatsappBtn" target="_blank" rel="noopener" aria-label="Escríbenos por WhatsApp">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M17.5 14.4c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.7.1-.2.3-.8.9-.9 1.1-.2.2-.3.2-.6.1-.3-.1-1.2-.5-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6l.4-.5c.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4s1 2.8 1.2 3c.1.2 2 3.1 4.9 4.3.7.3 1.2.5 1.6.6.7.2 1.3.2 1.8.1.6-.1 1.7-.7 1.9-1.4.2-.7.2-1.3.2-1.4-.1-.1-.3-.2-.6-.3M12 21.8c-1.8 0-3.5-.5-5-1.4l-.4-.2-3.7 1 1-3.6-.2-.4A9.8 9.8 0 0 1 12 2.2a9.8 9.8 0 0 1 9.8 9.8c0 5.4-4.4 9.8-9.8 9.8M20.4 3.6A11.8 11.8 0 0 0 1.8 17.9L.2 24l6.3-1.6a11.8 11.8 0 0 0 5.6 1.4c6.5 0 11.8-5.3 11.8-11.8 0-3.2-1.2-6.1-3.5-8.4"/></svg>
+  </a>
+
+  <script src="js/main.js" defer></script>
+</body>
+</html>

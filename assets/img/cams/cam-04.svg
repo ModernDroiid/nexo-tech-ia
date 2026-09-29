@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 200" preserveAspectRatio="xMidYMid slice">
+<defs>
+  <radialGradient id="vig" cx="50%" cy="50%" r="72%">
+    <stop offset=".55" stop-color="#000" stop-opacity="0"/>
+    <stop offset="1" stop-color="#000" stop-opacity=".7"/>
+  </radialGradient>
+
+  <linearGradient id="win" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0" stop-color="#0c2a3a"/><stop offset="1" stop-color="#18475a"/>
+  </linearGradient></defs>
+
+<rect width="320" height="200" fill="#0e2432"/>
+<!-- ventanas con persianas -->
+<rect x="30" y="20" width="104" height="56" fill="url(#win)" stroke="#24566a" stroke-width="2"/>
+<rect x="200" y="20" width="96" height="56" fill="url(#win)" stroke="#24566a" stroke-width="2"/>
+<rect x="40" y="42" width="2" height="2" fill="#f5c542" opacity=".6"/><rect x="52" y="36" width="2" height="2" fill="#f5c542" opacity=".6"/><rect x="66" y="48" width="2" height="2" fill="#f5c542" opacity=".6"/><rect x="80" y="40" width="2" height="2" fill="#f5c542" opacity=".6"/><rect x="96" y="52" width="2" height="2" fill="#f5c542" opacity=".6"/><rect x="118" y="38" width="2" height="2" fill="#f5c542" opacity=".6"/><rect x="212" y="44" width="2" height="2" fill="#f5c542" opacity=".6"/><rect x="226" y="36" width="2" height="2" fill="#f5c542" opacity=".6"/><rect x="244" y="50" width="2" height="2" fill="#f5c542" opacity=".6"/><rect x="262" y="40" width="2" height="2" fill="#f5c542" opacity=".6"/><rect x="280" y="46" width="2" height="2" fill="#f5c542" opacity=".6"/>
+<g stroke="#0e2a37" stroke-width="3" opacity=".7"><line x1="34" y1="22" x2="34" y2="74"/><line x1="43" y1="22" x2="43" y2="74"/><line x1="52" y1="22" x2="52" y2="74"/><line x1="61" y1="22" x2="61" y2="74"/><line x1="70" y1="22" x2="70" y2="74"/><line x1="79" y1="22" x2="79" y2="74"/><line x1="88" y1="22" x2="88" y2="74"/><line x1="97" y1="22" x2="97" y2="74"/><line x1="106" y1="22" x2="106" y2="74"/><line x1="115" y1="22" x2="115" y2="74"/><line x1="124" y1="22" x2="124" y2="74"/><line x1="204" y1="22" x2="204" y2="74"/><line x1="213" y1="22" x2="213" y2="74"/><line x1="222" y1="22" x2="222" y2="74"/><line x1="231" y1="22" x2="231" y2="74"/><line x1="240" y1="22" x2="240" y2="74"/><line x1="249" y1="22" x2="249" y2="74"/><line x1="258" y1="22" x2="258" y2="74"/><line x1="267" y1="22" x2="267" y2="74"/><line x1="276" y1="22" x2="276" y2="74"/><line x1="285" y1="22" x2="285" y2="74"/></g>
+<!-- reloj -->
+<circle cx="167" cy="40" r="11" fill="#0b1c26" stroke="#2b6b80" stroke-width="1.5"/>
+<line x1="167" y1="40" x2="167" y2="32" stroke="#8fe3f2" stroke-width="1.2"/>
+<line x1="167" y1="40" x2="173" y2="43" stroke="#8fe3f2" stroke-width="1.2"/>
+<!-- piso -->
+<rect x="0" y="104" width="320" height="96" fill="#0a1c26"/>
+<line x1="0" y1="104" x2="320" y2="104" stroke="#1d4656" stroke-width="2"/>
+<!-- planta -->
+<rect x="296" y="112" width="16" height="16" rx="2" fill="#173a49"/>
+<g fill="#2a6b58"><ellipse cx="298" cy="100" rx="5" ry="12" transform="rotate(-20 298 100)"/>
+<ellipse cx="310" cy="98" rx="5" ry="13" transform="rotate(18 310 98)"/><ellipse cx="304" cy="96" rx="4" ry="14"/></g>
+<!-- escritorio del fondo -->
+<polygon points="176,120 292,120 298,132 170,132" fill="#18404f"/>
+<rect x="174" y="132" width="3" height="16" fill="#12303d"/><rect x="290" y="132" width="3" height="16" fill="#12303d"/>
+
+<rect x="211.0" y="116" width="4" height="6" fill="#1a3e4d"/>
+<rect x="204.0" y="121" width="18" height="2" rx="1" fill="#1a3e4d"/>
+<rect x="196" y="96" width="34" height="20" rx="1.5" fill="#0a1a22" stroke="#2b6b80"/>
+<rect x="198" y="98" width="30" height="16" fill="#1f6b80" opacity=".5">
+  <animate attributeName="opacity" values=".5;.4;.55;.5" dur="3s" repeatCount="indefinite"/>
+</rect>
+<rect x="200" y="100" width="23.4" height="1.6" fill="#8fe3f2" opacity=".55"/><rect x="200" y="104" width="16.9" height="1.6" fill="#8fe3f2" opacity=".55"/><rect x="200" y="108" width="10.4" height="1.6" fill="#8fe3f2" opacity=".55"/>
+<ellipse cx="213.0" cy="125" rx="30.6" ry="5" fill="#5fd0e6" opacity=".12"/>
+
+<rect x="255.0" y="116" width="4" height="6" fill="#1a3e4d"/>
+<rect x="248.0" y="121" width="18" height="2" rx="1" fill="#1a3e4d"/>
+<rect x="240" y="96" width="34" height="20" rx="1.5" fill="#0a1a22" stroke="#2b6b80"/>
+<rect x="242" y="98" width="30" height="16" fill="#1f6b80" opacity=".5">
+  <animate attributeName="opacity" values=".5;.4;.55;.5" dur="3s" repeatCount="indefinite"/>
+</rect>
+<rect x="244" y="100" width="23.4" height="1.6" fill="#8fe3f2" opacity=".55"/><rect x="244" y="104" width="16.9" height="1.6" fill="#8fe3f2" opacity=".55"/><rect x="244" y="108" width="10.4" height="1.6" fill="#8fe3f2" opacity=".55"/>
+<ellipse cx="257.0" cy="125" rx="30.6" ry="5" fill="#5fd0e6" opacity=".12"/>
+<!-- escritorio del frente -->
+<polygon points="26,148 176,148 188,170 14,170" fill="#1b4757"/>
+<rect x="18" y="170" width="4" height="30" fill="#12303d"/><rect x="180" y="170" width="4" height="30" fill="#12303d"/>
+
+<rect x="77.0" y="142" width="4" height="6" fill="#1a3e4d"/>
+<rect x="70.0" y="147" width="18" height="2" rx="1" fill="#1a3e4d"/>
+<rect x="54" y="112" width="50" height="30" rx="1.5" fill="#0a1a22" stroke="#2b6b80"/>
+<rect x="56" y="114" width="46" height="26" fill="#1f6b80" opacity=".5">
+  <animate attributeName="opacity" values=".5;.4;.55;.5" dur="3s" repeatCount="indefinite"/>
+</rect>
+<rect x="58" y="116" width="37.8" height="1.6" fill="#8fe3f2" opacity=".55"/><rect x="58" y="120" width="27.3" height="1.6" fill="#8fe3f2" opacity=".55"/><rect x="58" y="124" width="16.8" height="1.6" fill="#8fe3f2" opacity=".55"/><rect x="58" y="128" width="37.8" height="1.6" fill="#8fe3f2" opacity=".55"/><rect x="58" y="132" width="27.3" height="1.6" fill="#8fe3f2" opacity=".55"/><rect x="58" y="136" width="16.8" height="1.6" fill="#8fe3f2" opacity=".55"/>
+<ellipse cx="79.0" cy="151" rx="45.0" ry="5" fill="#5fd0e6" opacity=".12"/>
+
+<rect x="135.0" y="142" width="4" height="6" fill="#1a3e4d"/>
+<rect x="128.0" y="147" width="18" height="2" rx="1" fill="#1a3e4d"/>
+<rect x="112" y="112" width="50" height="30" rx="1.5" fill="#0a1a22" stroke="#2b6b80"/>
+<rect x="114" y="114" width="46" height="26" fill="#1f6b80" opacity=".5">
+  <animate attributeName="opacity" values=".5;.4;.55;.5" dur="3s" repeatCount="indefinite"/>
+</rect>
+<rect x="116" y="116" width="37.8" height="1.6" fill="#8fe3f2" opacity=".55"/><rect x="116" y="120" width="27.3" height="1.6" fill="#8fe3f2" opacity=".55"/><rect x="116" y="124" width="16.8" height="1.6" fill="#8fe3f2" opacity=".55"/><rect x="116" y="128" width="37.8" height="1.6" fill="#8fe3f2" opacity=".55"/><rect x="116" y="132" width="27.3" height="1.6" fill="#8fe3f2" opacity=".55"/><rect x="116" y="136" width="16.8" height="1.6" fill="#8fe3f2" opacity=".55"/>
+<ellipse cx="137.0" cy="151" rx="45.0" ry="5" fill="#5fd0e6" opacity=".12"/>
+<rect x="80" y="154" width="42" height="6" rx="1.5" fill="#0c2330" stroke="#24566a" stroke-width=".6"/>
+<!-- silla -->
+<rect x="84" y="174" width="38" height="26" rx="6" fill="#123341"/>
+<rect x="88" y="168" width="30" height="8" rx="3" fill="#18404f"/>
+<!-- indicador -->
+<rect x="232" y="182" width="80" height="10" rx="1" fill="#0a1822" stroke="#34d399" stroke-width=".6"/>
+<text x="272" y="189.3" text-anchor="middle" font-size="6.3" font-family="JetBrains Mono, Consolas, monospace" font-weight="700" fill="#34d399">SIN ACTIVIDAD</text>
+
+<rect width="320" height="200" fill="url(#vig)"/>
+</svg>
