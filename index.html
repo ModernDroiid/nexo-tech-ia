@@ -24,6 +24,7 @@
   <link rel="stylesheet" href="css/components.css" />
   <link rel="stylesheet" href="css/sections.css" />
   <link rel="stylesheet" href="css/theme-light.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lenis@1.3.26/dist/lenis.css" />
 
   <!-- Aplica el tema guardado antes de pintar la página (evita parpadeo) -->
   <script>
@@ -45,6 +46,7 @@
           <li><a href="#servicios" class="nav__link">Servicios</a></li>
           <li><a href="#nosotros" class="nav__link">Nosotros</a></li>
           <li><a href="#proceso" class="nav__link">Proceso</a></li>
+          <li><a href="#proyectos" class="nav__link">Proyectos</a></li>
           <li><a href="#contacto" class="nav__link">Contacto</a></li>
         </ul>
         <a href="#contacto" class="btn btn--primary nav__cta">Cotizar ahora</a>
@@ -295,6 +297,54 @@
       </div>
     </section>
 
+    <!-- ============ PROYECTOS ============ -->
+    <section class="section section--alt" id="proyectos">
+      <div class="container">
+        <header class="section__header reveal">
+          <p class="eyebrow">Proyectos</p>
+          <h2 class="section__title">Trabajos recientes</h2>
+          <p class="section__text">Sitios web y software que hemos desarrollado. Puedes verlos en línea y revisar su código en GitHub.</p>
+        </header>
+
+        <div class="projects">
+          <article class="card project reveal">
+            <p class="project__tag">Software a la medida</p>
+            <h3 class="project__title">Nexo Almacén</h3>
+            <p class="project__text">Inventario multisede: entradas, salidas, traslados y devoluciones con serial, firma digital y acta en PDF.</p>
+            <ul class="project__stack"><li>HTML</li><li>Python</li></ul>
+            <div class="project__links">
+              <a href="https://moderndroiid.github.io/nexo-almacen/" class="btn btn--primary" target="_blank" rel="noopener">Ver sitio <svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path d="M14 4h6v6M20 4l-9 9M18 14v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+              <a href="https://github.com/ModernDroiid/nexo-almacen" class="btn btn--ghost" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path fill="currentColor" d="M12 .5a11.5 11.5 0 0 0-3.6 22.4c.6.1.8-.3.8-.6v-2c-3.2.7-3.9-1.5-3.9-1.5-.5-1.3-1.3-1.7-1.3-1.7-1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.8 1.3 3.5 1 .1-.8.4-1.3.7-1.6-2.6-.3-5.3-1.3-5.3-5.7 0-1.3.5-2.3 1.2-3.1-.1-.3-.5-1.5.1-3.1 0 0 1-.3 3.2 1.2a11 11 0 0 1 5.8 0c2.2-1.5 3.2-1.2 3.2-1.2.6 1.6.2 2.8.1 3.1.8.8 1.2 1.8 1.2 3.1 0 4.4-2.7 5.4-5.3 5.7.4.4.8 1.1.8 2.2v3.2c0 .3.2.7.8.6A11.5 11.5 0 0 0 12 .5"/></svg> Código</a>
+            </div>
+          </article>
+          <article class="card project reveal">
+            <p class="project__tag">Sitio web</p>
+            <h3 class="project__title">Fitway Gym</h3>
+            <p class="project__text">Sitio para una cadena de gimnasios en el sur de Bogotá: 4 sedes, horarios y registro para el primer día gratis.</p>
+            <ul class="project__stack"><li>HTML</li><li>CSS</li><li>JavaScript</li></ul>
+            <div class="project__links">
+              <a href="https://moderndroiid.github.io/fitway-gym/" class="btn btn--primary" target="_blank" rel="noopener">Ver sitio <svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path d="M14 4h6v6M20 4l-9 9M18 14v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+              <a href="https://github.com/ModernDroiid/fitway-gym" class="btn btn--ghost" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path fill="currentColor" d="M12 .5a11.5 11.5 0 0 0-3.6 22.4c.6.1.8-.3.8-.6v-2c-3.2.7-3.9-1.5-3.9-1.5-.5-1.3-1.3-1.7-1.3-1.7-1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.8 1.3 3.5 1 .1-.8.4-1.3.7-1.6-2.6-.3-5.3-1.3-5.3-5.7 0-1.3.5-2.3 1.2-3.1-.1-.3-.5-1.5.1-3.1 0 0 1-.3 3.2 1.2a11 11 0 0 1 5.8 0c2.2-1.5 3.2-1.2 3.2-1.2.6 1.6.2 2.8.1 3.1.8.8 1.2 1.8 1.2 3.1 0 4.4-2.7 5.4-5.3 5.7.4.4.8 1.1.8 2.2v3.2c0 .3.2.7.8.6A11.5 11.5 0 0 0 12 .5"/></svg> Código</a>
+            </div>
+          </article>
+          <article class="card project reveal">
+            <p class="project__tag">Sitio web</p>
+            <h3 class="project__title">Sculptor Gym</h3>
+            <p class="project__text">Página para un gimnasio con 8 sedes en Bogotá y Soacha: planes, clases grupales y ubicación de cada sede.</p>
+            <ul class="project__stack"><li>HTML</li><li>CSS</li><li>JavaScript</li></ul>
+            <div class="project__links">
+              <a href="https://moderndroiid.github.io/sculptor-gym/" class="btn btn--primary" target="_blank" rel="noopener">Ver sitio <svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path d="M14 4h6v6M20 4l-9 9M18 14v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+              <a href="https://github.com/ModernDroiid/sculptor-gym" class="btn btn--ghost" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path fill="currentColor" d="M12 .5a11.5 11.5 0 0 0-3.6 22.4c.6.1.8-.3.8-.6v-2c-3.2.7-3.9-1.5-3.9-1.5-.5-1.3-1.3-1.7-1.3-1.7-1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.8 1.3 3.5 1 .1-.8.4-1.3.7-1.6-2.6-.3-5.3-1.3-5.3-5.7 0-1.3.5-2.3 1.2-3.1-.1-.3-.5-1.5.1-3.1 0 0 1-.3 3.2 1.2a11 11 0 0 1 5.8 0c2.2-1.5 3.2-1.2 3.2-1.2.6 1.6.2 2.8.1 3.1.8.8 1.2 1.8 1.2 3.1 0 4.4-2.7 5.4-5.3 5.7.4.4.8 1.1.8 2.2v3.2c0 .3.2.7.8.6A11.5 11.5 0 0 0 12 .5"/></svg> Código</a>
+            </div>
+          </article>
+        </div>
+
+        <p class="projects__more reveal">
+          <a href="https://github.com/ModernDroiid" class="btn btn--ghost" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path fill="currentColor" d="M12 .5a11.5 11.5 0 0 0-3.6 22.4c.6.1.8-.3.8-.6v-2c-3.2.7-3.9-1.5-3.9-1.5-.5-1.3-1.3-1.7-1.3-1.7-1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.8 1.3 3.5 1 .1-.8.4-1.3.7-1.6-2.6-.3-5.3-1.3-5.3-5.7 0-1.3.5-2.3 1.2-3.1-.1-.3-.5-1.5.1-3.1 0 0 1-.3 3.2 1.2a11 11 0 0 1 5.8 0c2.2-1.5 3.2-1.2 3.2-1.2.6 1.6.2 2.8.1 3.1.8.8 1.2 1.8 1.2 3.1 0 4.4-2.7 5.4-5.3 5.7.4.4.8 1.1.8 2.2v3.2c0 .3.2.7.8.6A11.5 11.5 0 0 0 12 .5"/></svg> Ver todos en GitHub</a>
+        </p>
+      </div>
+    </section>
+
     <!-- ============ CTA ============ -->
     <section class="cta">
       <div class="container">
@@ -384,6 +434,7 @@
         <a href="#servicios">Servicios</a>
         <a href="#nosotros">Nosotros</a>
         <a href="#proceso">Proceso</a>
+        <a href="#proyectos">Proyectos</a>
         <a href="#contacto">Contacto</a>
       </nav>
       <p class="footer__copy">© <span id="year"></span> Nexo Tech IA. Todos los derechos reservados.</p>
@@ -395,6 +446,8 @@
     <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M17.5 14.4c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.7.1-.2.3-.8.9-.9 1.1-.2.2-.3.2-.6.1-.3-.1-1.2-.5-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6l.4-.5c.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4s1 2.8 1.2 3c.1.2 2 3.1 4.9 4.3.7.3 1.2.5 1.6.6.7.2 1.3.2 1.8.1.6-.1 1.7-.7 1.9-1.4.2-.7.2-1.3.2-1.4-.1-.1-.3-.2-.6-.3M12 21.8c-1.8 0-3.5-.5-5-1.4l-.4-.2-3.7 1 1-3.6-.2-.4A9.8 9.8 0 0 1 12 2.2a9.8 9.8 0 0 1 9.8 9.8c0 5.4-4.4 9.8-9.8 9.8M20.4 3.6A11.8 11.8 0 0 0 1.8 17.9L.2 24l6.3-1.6a11.8 11.8 0 0 0 5.6 1.4c6.5 0 11.8-5.3 11.8-11.8 0-3.2-1.2-6.1-3.5-8.4"/></svg>
   </a>
 
+  <!-- Scroll suave con inercia -->
+  <script src="https://cdn.jsdelivr.net/npm/lenis@1.3.26/dist/lenis.min.js" defer></script>
   <script src="js/main.js" defer></script>
 </body>
 </html>

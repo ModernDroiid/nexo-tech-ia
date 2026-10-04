@@ -34,6 +34,30 @@ themeToggle.addEventListener("click", () => {
   try { localStorage.setItem("theme", next); } catch (e) { /* almacenamiento no disponible */ }
 });
 
+/* ---------- Scroll suave con inercia (Lenis) ---------- */
+const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+const lenis =
+  window.Lenis && !reduceMotion
+    ? new Lenis({
+        lerp: 0.08,
+        wheelMultiplier: 0.9,
+        autoRaf: true,
+      })
+    : null;
+
+// Enlaces internos: desplazamiento animado sin el salto previo del navegador
+if (lenis) {
+  document.addEventListener("click", (e) => {
+    const link = e.target.closest('a[href^="#"]');
+    const target = link && link.getAttribute("href").length > 1 && document.querySelector(link.getAttribute("href"));
+    if (!target) return;
+    e.preventDefault();
+    // Lenis ya respeta el scroll-padding-top del CSS (altura del header)
+    lenis.scrollTo(target, { duration: 1.4 });
+    history.pushState(null, "", link.getAttribute("href"));
+  });
+}
+
 /* ---------- Header: fondo al hacer scroll ---------- */
 const header = $("#header");
 const onScroll = () => header.classList.toggle("is-scrolled", window.scrollY > 20);
@@ -50,6 +74,7 @@ const setMenu = (open) => {
   toggle.setAttribute("aria-expanded", String(open));
   toggle.setAttribute("aria-label", open ? "Cerrar menú" : "Abrir menú");
   document.body.style.overflow = open ? "hidden" : "";
+  if (lenis) open ? lenis.stop() : lenis.start();
 };
 
 toggle.addEventListener("click", () => setMenu(!nav.classList.contains("is-open")));
@@ -77,16 +102,23 @@ const revealObserver = new IntersectionObserver(
   (entries, obs) => {
     entries.forEach((entry) => {
       if (!entry.isIntersecting) return;
-      entry.target.classList.add("is-visible");
-      obs.unobserve(entry.target);
+      const el = entry.target;
+      el.classList.add("is-visible");
+      obs.unobserve(el);
+      // Al terminar, se quita el retraso para que el hover responda al instante
+      el.addEventListener(
+        "transitionend",
+        (e) => { if (e.target === el && e.propertyName === "transform") el.classList.add("is-done"); }
+      );
     });
   },
-  { threshold: 0.12, rootMargin: "0px 0px -40px 0px" }
+  { threshold: 0, rootMargin: "0px 0px -8% 0px" }
 );
 
-$$(".reveal").forEach((el, i) => {
-  // Pequeño retraso escalonado para elementos en la misma fila
-  el.style.transitionDelay = `${(i % 4) * 80}ms`;
+$$(".reveal").forEach((el) => {
+  // Retraso escalonado solo entre hermanos (tarjetas de la misma fila)
+  const siblings = [...el.parentElement.children].filter((c) => c.classList.contains("reveal"));
+  el.style.setProperty("--reveal-delay", `${siblings.indexOf(el) * 110}ms`);
   revealObserver.observe(el);
 });
 

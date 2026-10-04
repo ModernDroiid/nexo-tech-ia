@@ -135,19 +135,23 @@ p { text-wrap: pretty; }
 }
 
 /* Animación de aparición al hacer scroll */
-.reveal {
+/* Mientras aparece, esta transición manda sobre la de hover de las tarjetas */
+.reveal:not(.is-done) {
   opacity: 0;
-  transform: translateY(24px);
-  transition: opacity 0.7s var(--ease), transform 0.7s var(--ease);
+  transform: translate3d(0, 32px, 0) scale(0.985);
+  transition:
+    opacity 1s var(--ease) var(--reveal-delay, 0ms),
+    transform 1.2s var(--ease) var(--reveal-delay, 0ms);
+  will-change: opacity, transform;
 }
 
-.reveal.is-visible {
+.reveal.is-visible:not(.is-done) {
   opacity: 1;
   transform: none;
 }
 
 /* Sin JS: mostrar todo */
-.no-js .reveal { opacity: 1; transform: none; }
+.no-js .reveal:not(.is-done) { opacity: 1; transform: none; }
 
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
@@ -156,5 +160,5 @@ p { text-wrap: pretty; }
     animation-iteration-count: 1 !important;
     transition-duration: 0.01ms !important;
   }
-  .reveal { opacity: 1; transform: none; }
+  .reveal:not(.is-done) { opacity: 1; transform: none; }
 }
